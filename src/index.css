@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Hind+Siliguri:wght@300;400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", "Hind Siliguri", ui-sans-serif, system-ui, sans-serif;
+  --color-primary: #2D5A27; /* Forest Green */
+  --color-primary-light: #E8F5E9; /* Light Sage */
+  --color-primary-soft: #F9FBFA; /* Off-white sage */
+  --color-accent: #FDCB6E; /* Amber */
+  --color-border-main: #D1DBCE;
+  --color-border-soft: #E0E7DE;
+  --color-text-main: #2D3436;
+  --color-bg-app: #F4F7F2;
+}
+
+@layer base {
+  body {
+    @apply bg-bg-app text-text-main antialiased font-sans;
+  }
+}
+
+.islamic-pattern {
+  background-image: url("https://www.transparenttextures.com/patterns/arabesque.png");
+  opacity: 0.05;
+}
